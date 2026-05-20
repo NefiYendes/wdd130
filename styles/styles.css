@@ -1,22 +1,29 @@
+:root {
+    --main-font-color: white;
+    --main-title-color: darkblue;
+    --border: 1px solid black;
+
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--main-font-color);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-title-color);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -32,10 +39,10 @@ main {
 aside {
     width: 400px;
     margin: 10px;
-    border: 1px solid black;
+    border: var(--border);
     padding: 3px;
     background-color: rgb(245, 225, 44);
-    color: white;
+    color: var(--main-font-color);
     text-align: center;
 }
 
@@ -46,6 +53,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid black;
+    border-top: var(--border);
     text-align: center;
 }
