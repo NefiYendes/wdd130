@@ -102,7 +102,7 @@ h1 {
 
 .hero article {
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: rgb(27, 52, 90);
     color: var(--background-color);
     opacity: .8;
     top: 350px;
