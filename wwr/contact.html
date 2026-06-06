@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Welcome to the contact page of the Water Rafting Adventure, feel free to contact us at any moment.">
+    <meta name="author" content="Nefi Yendes">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>contact us</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/white_water_rafting_logo.jpeg" alt="White Water Rafting Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="contact">
+                <h1>Water Rafting Adventures</h1>
+                <section class="information">
+                    <p>Guayana City, 8051</p>
+                    <p>Bolivar, Venezuela</p>
+                    <p>+58 4120132693</p>
+                    <p>info@whitewater.com</p>
+                </section>
+            </div>
+        </div>
+        <section class="middle">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.8711180790465!2d-62.69039442630984!3d8.31560409171996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8dcbfb22f525e7b9%3A0x94d767776bef8fd1!2sLa%20Llovizna%20Hotel%20%26%20Casino!5e0!3m2!1spt-BR!2sve!4v1780767010760!5m2!1spt-BR!2sve"
+              width="380" height="373" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="submit">
+                <fieldset class="personal_information">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Ej. Jane Doe" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="janedoe@example.com" required>
+                </fieldset>
+                <fieldset class="purpose">
+                    <legend>Message Purpose</legend>
+                    <section>
+                        <label>
+                            <input type="radio" name="purpose" id="general" checked> General inquiry
+                        </label>
+                        <br>
+
+                        <label>
+                            <input type="radio" name="purpose" id="reservation"> Reservation
+                            Question
+                        </label>
+                        <br>
+
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion"> Website
+                            Suggestion
+                        </label>
+                    </section>
+                </fieldset>
+                <fieldset class="message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4"
+                      placeholder="Type here"></textarea>
+                </fieldset>
+                <label for="check"></label>
+                <input type="checkbox"> Please subscribe me to the monthly newsletter
+                <button class="touch" type="submit">Get in Touch!</button>
+            </form>
+
+        </section>
+        <section class="final">
+            <h2>We Are Here to Serve You</h2>
+            <figure>
+                <img src="images/melisa.jpg" alt="Melisa_Valdez">
+                <figcaption><a href="#">Melisa Arrieta<br>Costumer Service Manager</a></figcaption>
+            </figure>
+            <figure>
+                <img src="images/lorena.jpg" alt="Lorena_Guilarte">
+                <figcaption><a href="#">Lorena Guilarte<br>Comunication Manager</a></figcaption>
+            </figure>
+            <figure>
+                <img src="images/francisco.jpg" alt="Francisco_Sierra">
+                <figcaption><a href="#">Francisco Sierra <br> Tourism Guide</a></figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 White Water Rafting Adventures. Nefi S. Yendes</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/nefi.yendes/"> <img src="images/facebook.svg"
+                  alt="facebook Logo">
+            </a>
+            <a href="#">
+                <img src="images/instagram.svg" alt="Instagram Logo">
+            </a>
+            <a href="#">
+                <img src="images/youtube.svg" alt="YouTube Logo">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>

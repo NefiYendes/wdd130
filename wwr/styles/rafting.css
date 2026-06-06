@@ -205,3 +205,115 @@ footer nav {
     object-fit: contain;
     display: block;
 }
+
+.contact h1 {
+    background-color: none;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.information {
+    margin-top: 40px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.contact p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;
+    padding: 0;
+}
+
+.middle {
+    display: flex;
+    gap: 10px;
+}
+
+.personal_information {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px 125px;
+    align-items: center;
+    max-width: 200px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.personal_information input {
+    padding: 4px;
+}
+
+.purpose {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    border: none;
+    gap: 0 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.purpose legend {
+    grid-column: 1;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.purpose section {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.purpose label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 3px;
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+
+.message textarea {
+    display: flex;
+    text-align: left;
+}
+
+.touch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.final {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.final h2 {
+    display: grid;
+    grid-column: 1/4;
+}
+
+.final a {
+    text-decoration: none;
+    color: white;
+}
