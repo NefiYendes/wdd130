@@ -5,13 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>Home page</title>
+    <title>Home page / Welcome to your new Water Rafting Adventure</title>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="top">
+        <img src="images/white_water_rafting_logo.jpeg" alt="White Water Rafting Logo" class="logo">
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-container main-photo">
+            <img src="images/raftin_portada.jpg" alt="water-rafting-adventures" class="hero-image">
+            <div class="hero-text title">
+                <h1>Welcome To White Water Rafting</h1>
+            </div>
+        </div>
+        <form action="submit" class="form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Ej: Jane Doe">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <button id="button">Get more information</button>
+        </form>
+        <section class="part3 additional">
+            <h2>Adventure Awaits You!</h2>
+            <figure>
+                <img src="images/camping.jpg" alt="Camping adventure activity">
+                <figcaption>Riverside camping: the perfect ending to a wild rafting adventure.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/hiking.jpg" alt="hiking adventure activity">
+                <figcaption>Explore scenic wilderness trails and discover stunning riverside views.
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/rafting_adventure.jpg" alt="Rafting adventure activity">
+                <figcaption>Conquer the wild river rapids and feel the ultimate rush of teamwork.
+                </figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 White Water Rafting Adventures. Nefi S. Yendes</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/nefi.yendes/"> <img src="images/facebook.svg"
+                  alt="facebook Logo">
+            </a>
+            <a href="#">
+                <img src="images/instagram.svg" alt="Instagram Logo">
+            </a>
+            <a href="#">
+                <img src="images/youtube.svg" alt="YouTube Logo">
+            </a>
+        </nav>
+    </footer>
 </body>
 
 </html>
