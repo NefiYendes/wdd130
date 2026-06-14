@@ -355,7 +355,7 @@ iframe {
 
 .title h1 {
     margin-top: 75px;
-    background-color: #1a5167;
+    background: rgba(0, 0, 0, 0.511);
 }
 
 .title p {
@@ -411,10 +411,6 @@ iframe {
 
 #button:hover {
     transform: scale(1.2);
-}
-
-.title h1 {
-    background: rgba(0, 0, 0, 0.511);
 }
 
 .additional {
