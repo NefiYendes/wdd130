@@ -6,10 +6,9 @@
     --heading-font: 'Arial Black', sans-serif;
     --body-font: 'Arial', helvetica, sans-serif;
     --cta-blue: #1a5167;
-    --hero-article-bg: rgb(27, 52, 90);
+    --hero-article-bg: #1b345a;
     --table-stripe: #f9f9f9;
-    --border-light: #ccc;
-    --border-gray: #eee;
+    --border-light: #cccccc;
     --rgba-overlay: rgba(0, 0, 0, 0.511);
 }
 
@@ -442,46 +441,4 @@ iframe {
 
 .final article img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.final article h3 {
-    margin: 10px 0 5px 0;
-}
-
-.final article p {
-    margin: 5px 0 15px 0;
-    font-size: 0.9rem;
-    padding: 0;
-}
-
-.final article a {
-    display: inline-block;
-    background-color: var(--primary-color);
-    padding: 8px 16px;
-    border-radius: 5px;
-}
-
-.trips-table {
-    grid-column: 1/6;
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-.trips-table th {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    padding: 10px;
-    text-align: left;
-}
-
-.trips-table td {
-    padding: 10px;
-    border-bottom: 1px solid var(--border-light);
-}
-
-.trips-table tr:nth-child(even) {
-    background-color: var(--table-stripe);
-}
+    height: 150
