@@ -5,12 +5,7 @@
     --text-color: #000000;
     --heading-font: 'Arial Black', sans-serif;
     --body-font: 'Arial', helvetica, sans-serif;
-
-    /* Estandarización absoluta de colores para limpiar el validador */
-    --cta-blue: #1a5167;
     --hero-article-bg: #1b345a;
-    --table-stripe: #f9f9f9;
-    --border-light: #cccccc;
     --rgba-overlay: rgba(0, 0, 0, 0.511);
 }
 
@@ -115,7 +110,7 @@ h1 {
 
 .hero article {
     position: absolute;
-    background-color: var(--hero-article-bg);
+    background-color: var(--primary-color);
     color: var(--background-color);
     opacity: .8;
     top: 350px;
@@ -390,7 +385,7 @@ iframe {
 
 .cta-button {
     position: absolute;
-    background-color: var(--cta-blue);
+    background-color: var(--secondary-color);
     color: var(--background-color);
     padding: 5px;
     border-radius: 20px;
@@ -480,9 +475,9 @@ iframe {
 
 .trips-table td {
     padding: 10px;
-    border-bottom: 1px solid var(--border-light);
+    border-bottom: 1px solid var(--background-color)
 }
 
 .trips-table tr:nth-child(even) {
-    background-color: var(--table-stripe);
+    background-color: var(--background-color)
 }
