@@ -5,6 +5,12 @@
     --text-color: #000000;
     --heading-font: 'Arial Black', sans-serif;
     --body-font: 'Arial', helvetica, sans-serif;
+    --cta-blue: #1a5167;
+    --hero-article-bg: rgb(27, 52, 90);
+    --table-stripe: #f9f9f9;
+    --border-light: #ccc;
+    --border-gray: #eee;
+    --rgba-overlay: rgba(0, 0, 0, 0.511);
 }
 
 * {
@@ -48,8 +54,13 @@ header {
     margin-bottom: 10px;
 }
 
-header nav {
+header nav,
+header nav ul,
+header li {
     display: flex;
+}
+
+header nav {
     justify-content: center;
     align-items: center;
 }
@@ -59,18 +70,19 @@ header img {
 }
 
 header nav ul {
-    display: flex;
     list-style: none;
     gap: 10px;
 }
 
 header li {
-    display: flex;
     justify-self: center;
     align-self: center;
 }
 
-.socialmedia a {
+.socialmedia a,
+.final a,
+.nav li > a,
+.cta-button {
     text-decoration: none;
 }
 
@@ -102,13 +114,24 @@ h1 {
 
 .hero article {
     position: absolute;
-    background-color: rgb(27, 52, 90);
+    background-color: var(--hero-article-bg);
     color: var(--background-color);
     opacity: .8;
     top: 350px;
 }
 
-.part2 img p {
+.part2 img p,
+.contact h1,
+.contact p,
+.middle,
+.purpose section,
+.purpose label,
+.message,
+.message textarea,
+.touch,
+.figures,
+.title p,
+.form {
     display: flex;
 }
 
@@ -124,7 +147,7 @@ section h2 {
     width: 100%;
     justify-content: center;
     background-color: var(--secondary-color);
-    color: #fff;
+    color: var(--background-color);
     margin-bottom: 20px;
     align-content: center;
     grid-column: 1/4;
@@ -140,7 +163,8 @@ section h2 {
     justify-self: center;
 }
 
-.part3 {
+.part3,
+.additional {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 }
@@ -206,7 +230,6 @@ footer nav {
 }
 
 .contact h1 {
-    display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -225,7 +248,6 @@ iframe {
 }
 
 .contact p {
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -234,7 +256,6 @@ iframe {
 }
 
 .middle {
-    display: flex;
     gap: 10px;
 }
 
@@ -272,18 +293,15 @@ iframe {
 
 .purpose section {
     grid-column: 2;
-    display: flex;
     flex-direction: column;
 }
 
 .purpose label {
-    display: flex;
     align-items: center;
     gap: 8px;
 }
 
 .message {
-    display: flex;
     flex-direction: column;
     border: none;
     gap: 3px;
@@ -292,12 +310,10 @@ iframe {
 }
 
 .message textarea {
-    display: flex;
     text-align: left;
 }
 
 .touch {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 350px;
@@ -309,7 +325,7 @@ iframe {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--background-color);
 }
 
 .final h2 {
@@ -318,8 +334,7 @@ iframe {
 }
 
 .final a {
-    text-decoration: none;
-    color: white;
+    color: var(--background-color);
 }
 
 .hero-container {
@@ -350,17 +365,15 @@ iframe {
 
 .nav li > a {
     color: var(--background-color);
-    text-decoration: none;
 }
 
 .title h1 {
     margin-top: 75px;
-    background: rgba(0, 0, 0, 0.511);
+    background: var(--rgba-overlay);
 }
 
 .title p {
     position: relative;
-    display: flex;
     align-items: end;
     justify-content: center;
     padding: 20px;
@@ -369,27 +382,26 @@ iframe {
     cursor: pointer;
 }
 
-.title p:hover {
+.title p:hover,
+#button:hover {
     transform: scale(1.2);
 }
 
 .cta-button {
     position: absolute;
-    background-color: #1a5167;
-    color: white;
+    background-color: var(--cta-blue);
+    color: var(--background-color);
     padding: 5px;
     border-radius: 20px;
-    text-decoration: none;
 }
 
 .form {
     position: relative;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #045779;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--background-color);
     margin: 0px 250px;
     padding: 5px 5px;
     border-radius: 10px;
@@ -405,25 +417,19 @@ iframe {
     outline: none;
     cursor: pointer;
     transition: all 0.5s ease;
-    color: white;
-    background-color: #104713;
-}
-
-#button:hover {
-    transform: scale(1.2);
+    color: var(--background-color);
+    background-color: var(--secondary-color);
 }
 
 .additional {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .additional h2 {
-    background-color: #045779;
+    background-color: var(--primary-color);
 }
 
-figures {
-    display: flex;
+.figures {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -466,16 +472,16 @@ figures {
 
 .trips-table th {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     padding: 10px;
     text-align: left;
 }
 
 .trips-table td {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--border-light);
 }
 
 .trips-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: var(--table-stripe);
 }
