@@ -5,6 +5,8 @@
     --text-color: #000000;
     --heading-font: 'Arial Black', sans-serif;
     --body-font: 'Arial', helvetica, sans-serif;
+
+    /* Estandarización absoluta de colores para limpiar el validador */
     --cta-blue: #1a5167;
     --hero-article-bg: #1b345a;
     --table-stripe: #f9f9f9;
