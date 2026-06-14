@@ -7,6 +7,8 @@
     --body-font: 'Arial', helvetica, sans-serif;
     --hero-article-bg: #1b345a;
     --rgba-overlay: rgba(0, 0, 0, 0.511);
+    --table-stripe: #f9f9f9;
+    --border-light: #cccccc;
 }
 
 * {
@@ -127,7 +129,10 @@ h1 {
 .touch,
 .figures,
 .title p,
-.form {
+.form,
+figure,
+figcaption,
+footer {
     display: flex;
 }
 
@@ -170,7 +175,6 @@ section h2 {
 }
 
 figure {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -183,7 +187,6 @@ figure img {
 }
 
 figcaption {
-    display: flex;
     font-size: .6rem;
     text-align: center;
     margin-top: 10px;
@@ -191,7 +194,6 @@ figcaption {
 
 footer {
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -321,16 +323,21 @@ iframe {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--secondary-color);
+}
+
+.final,
+.final a,
+.nav li > a,
+.cta-button,
+.form,
+#button,
+.trips-table th {
     color: var(--background-color);
 }
 
 .final h2 {
     display: grid;
     grid-column: 1/4;
-}
-
-.final a {
-    color: var(--background-color);
 }
 
 .hero-container {
@@ -359,10 +366,6 @@ iframe {
     border-radius: 50%;
 }
 
-.nav li > a {
-    color: var(--background-color);
-}
-
 .title h1 {
     margin-top: 75px;
     background: var(--rgba-overlay);
@@ -386,7 +389,6 @@ iframe {
 .cta-button {
     position: absolute;
     background-color: var(--secondary-color);
-    color: var(--background-color);
     padding: 5px;
     border-radius: 20px;
 }
@@ -397,7 +399,6 @@ iframe {
     justify-content: center;
     align-items: center;
     background-color: var(--primary-color);
-    color: var(--background-color);
     margin: 0px 250px;
     padding: 5px 5px;
     border-radius: 10px;
@@ -413,7 +414,6 @@ iframe {
     outline: none;
     cursor: pointer;
     transition: all 0.5s ease;
-    color: var(--background-color);
     background-color: var(--secondary-color);
 }
 
@@ -468,16 +468,15 @@ iframe {
 
 .trips-table th {
     background-color: var(--primary-color);
-    color: var(--background-color);
     padding: 10px;
     text-align: left;
 }
 
 .trips-table td {
     padding: 10px;
-    border-bottom: 1px solid var(--background-color)
+    border-bottom: 1px solid var(--border-light);
 }
 
 .trips-table tr:nth-child(even) {
-    background-color: var(--background-color)
+    background-color: var(--table-stripe);
 }
