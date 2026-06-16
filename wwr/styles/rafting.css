@@ -47,7 +47,7 @@ article {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-content: space-around;
+    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -58,8 +58,9 @@ header li {
 }
 
 header nav {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 header img {
@@ -478,4 +479,11 @@ iframe {
 
 .trips-table tr:nth-child(even) {
     background-color: var(--table-stripe);
+}
+
+.top {
+    display: flex;
+    width: 840px;
+    justify-self: center;
+    padding: 0 5px;
 }
