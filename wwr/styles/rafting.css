@@ -322,7 +322,7 @@ header nav ul li a:hover {
     display: block;
 }
 
-.grid-item h3 {
+.grid-item h2 {
     font-size: 1.2rem;
     margin: 20px 20px 10px 20px;
     text-align: left;
@@ -398,7 +398,7 @@ header nav ul li a:hover {
 }
 
 .final h1.trips,
-.final h2 {
+.final > h2 {
     grid-column: 1 / 4;
     background-color: var(--secondary-color);
     color: var(--background-color);
@@ -430,10 +430,15 @@ header nav ul li a:hover {
     object-fit: cover;
 }
 
-.final article h3 {
+/* Estilo unificado para el nuevo elemento h2 dentro de las tarjetas */
+.final article h2 {
     font-size: 1.2rem;
     margin: 20px 20px 10px 20px;
     color: var(--primary-color);
+    background: none;
+    text-align: left;
+    padding: 0;
+    border-radius: 0;
 }
 
 .final article p {
